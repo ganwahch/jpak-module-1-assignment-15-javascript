@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS events chapters 43-48</title>
+    
+</head>
+<body>
+    <h1>Javascript events</h1>            
+     <!-- Q 1: Show an alert box on click on a link.  -->
+     <a href="JavaScript:void(0)" onClick="alert('Hello world');">Click</a>
+    <!--Q 2:Display some Mobile images in browser. On click on an image Show the message in alert to user.  -->
+    <img src="phone.jpg" onclick="alert('Welcome!')" width="50px" height="50px" >
+    <img src="imagephone.jpg" onclick="showAlert()" alt="">
+    <!-- Q 3:Display 10 student records in table and each row should contain a delete  button. If you click on a button to delete a record, entire row should bedeleted. -->
+      <table id="stu-data">
+          <tr>
+              <th>Index</th>
+              <th>Class</th>
+              <th>Index</th>  
+          </tr>
+          <tr id="row">
+            <td>0</td>
+            <td>Amna</td>
+            <td>10</td>
+            <td><button onclick="DeleteData(this)">Delete</button></td>
+        </tr>
+        <tr id="row">
+            <td>1</td>
+            <td>Sunbal</td>
+            <td>9</td>
+            <td><button onclick="DeleteData(this)">Delete</button></td>
+        </tr>
+       
+        <tr id="row">
+            <td>2</td>
+             <td>Mehak</td>                                                                       
+            <td>10</td>
+            <td><button onclick="DeleteData(this)">Delete</button></td>
+        </tr>
+        <tr id="row">
+            <td>3</td>
+            <td>Jaweria</td>
+            <td>8</td>
+            <td><button onclick="DeleteData(this)">Delete</button></td>
+        </tr>
+      </table>
+      <!-- Q 4:Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.-->
+      <img onmouseout="alert('Work out')" onmouseover="alert('Working')" src="phone.jpg" height="50px" width="50px">
+      <!-- Q 5: Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. 
+      And show updated countervalue in browser.-->
+      <img onmouseout="alert('Work out')" onmouseover="alert('Working')" src="imagephone.jpg" height="50px" width="50px">
+      <button onclick="increase()">increase</button>
+      <button onclick="decrease()">decrease</button>
+      
+
+    
+   <script src="./assignment.js"></script> 
+    
+     </body> 
+</html>  
